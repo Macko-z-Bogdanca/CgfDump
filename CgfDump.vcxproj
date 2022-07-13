@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b0c78fce-456d-4a04-b6d9-608072900371}</ProjectGuid>
+    <RootNamespace>CgfDump</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CgfDump\CgfDump.cpp" />
+    <ClCompile Include="src\CgfDump\CgfUtils.cpp" />
+    <ClCompile Include="src\CgfDump\ChunkFileReader.cpp" />
+    <ClCompile Include="src\CgfDump\crc32.cpp" />
+    <ClCompile Include="src\CgfDump\FileMapping.cpp" />
+    <ClCompile Include="src\CgfDump\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CgfDump\CgfDump.h" />
+    <ClInclude Include="src\CgfDump\CgfUtils.h" />
+    <ClInclude Include="src\CgfDump\ChunkFileReader.h" />
+    <ClInclude Include="src\CgfDump\crc32.h" />
+    <ClInclude Include="src\CgfDump\CryHeaders.h" />
+    <ClInclude Include="src\CgfDump\FileMapping.h" />
+    <ClInclude Include="src\CgfDump\stdafx.h" />
+    <ClInclude Include="src\CryCommon\AABBSV.h" />
+    <ClInclude Include="src\CryCommon\AgentParams.h" />
+    <ClInclude Include="src\CryCommon\AnimKey.h" />
+    <ClInclude Include="src\CryCommon\ColorDefs.h" />
+    <ClInclude Include="src\CryCommon\CRE2DQuad.h" />
+    <ClInclude Include="src\CryCommon\CREDummy.h" />
+    <ClInclude Include="src\CryCommon\CREFlashBang.h" />
+    <ClInclude Include="src\CryCommon\CREGlare.h" />
+    <ClInclude Include="src\CryCommon\CREOcclusionQuery.h" />
+    <ClInclude Include="src\CryCommon\CREOcLeaf.h" />
+    <ClInclude Include="src\CryCommon\CREPolyMesh.h" />
+    <ClInclude Include="src\CryCommon\CREScreenProcess.h" />
+    <ClInclude Include="src\CryCommon\CREShadowMap.h" />
+    <ClInclude Include="src\CryCommon\CRESky.h" />
+    <ClInclude Include="src\CryCommon\CRETerrainSector.h" />
+    <ClInclude Include="src\CryCommon\CRETriMeshAdditionalShadow.h" />
+    <ClInclude Include="src\CryCommon\CRETriMeshShadow.h" />
+    <ClInclude Include="src\CryCommon\CrtDebugStats.h" />
+    <ClInclude Include="src\CryCommon\CryAnimationScriptCommands.h" />
+    <ClInclude Include="src\CryCommon\CryCharAnimationParams.h" />
+    <ClInclude Include="src\CryCommon\CryCharFxTrailParams.h" />
+    <ClInclude Include="src\CryCommon\CryCharMorphParams.h" />
+    <ClInclude Include="src\CryCommon\CryCompiledFile.h" />
+    <ClInclude Include="src\CryCommon\CryEngineDecalInfo.h" />
+    <ClInclude Include="src\CryCommon\CryFile.h" />
+    <ClInclude Include="src\CryCommon\CryHeaders.h" />
+    <ClInclude Include="src\CryCommon\CryLibrary.h" />
+    <ClInclude Include="src\CryCommon\CryMemoryManager.h" />
+    <ClInclude Include="src\CryCommon\CryParticleSpawnInfo.h" />
+    <ClInclude Include="src\CryCommon\CryPhysics.h" />
+    <ClInclude Include="src\CryCommon\CrySizer.h" />
+    <ClInclude Include="src\CryCommon\crysound.h" />
+    <ClInclude Include="src\CryCommon\crysound64.h" />
+    <ClInclude Include="src\CryCommon\CryVersion.h" />
+    <ClInclude Include="src\CryCommon\Cry_Camera.h" />
+    <ClInclude Include="src\CryCommon\Cry_Color4.h" />
+    <ClInclude Include="src\CryCommon\Cry_Geo.h" />
+    <ClInclude Include="src\CryCommon\Cry_GeoDistance.h" />
+    <ClInclude Include="src\CryCommon\Cry_GeoIntersect.h" />
+    <ClInclude Include="src\CryCommon\Cry_GeoOverlap.h" />
+    <ClInclude Include="src\CryCommon\Cry_Math.h" />
+    <ClInclude Include="src\CryCommon\Cry_Matrix.h" />
+    <ClInclude Include="src\CryCommon\Cry_Quat.h" />
+    <ClInclude Include="src\CryCommon\Cry_Vector2.h" />
+    <ClInclude Include="src\CryCommon\Cry_Vector3.h" />
+    <ClInclude Include="src\CryCommon\Cry_XOptimise.h" />
+    <ClInclude Include="src\CryCommon\EntityDesc.h" />
+    <ClInclude Include="src\CryCommon\Font.h" />
+    <ClInclude Include="src\CryCommon\FrameProfiler.h" />
+    <ClInclude Include="src\CryCommon\I3DEngine.h" />
+    <ClInclude Include="src\CryCommon\IAgent.h" />
+    <ClInclude Include="src\CryCommon\IAISystem.h" />
+    <ClInclude Include="src\CryCommon\IBindable.h" />
+    <ClInclude Include="src\CryCommon\IBitStream.h" />
+    <ClInclude Include="src\CryCommon\ICompressionHelper.h" />
+    <ClInclude Include="src\CryCommon\IConsole.h" />
+    <ClInclude Include="src\CryCommon\ICryAnimation.h" />
+    <ClInclude Include="src\CryCommon\ICryPak.h" />
+    <ClInclude Include="src\CryCommon\IDataProbe.h" />
+    <ClInclude Include="src\CryCommon\IEdgeConnectivityBuilder.h" />
+    <ClInclude Include="src\CryCommon\IEntityRenderState.h" />
+    <ClInclude Include="src\CryCommon\IEntitySystem.h" />
+    <ClInclude Include="src\CryCommon\IFont.h" />
+    <ClInclude Include="src\CryCommon\IGame.h" />
+    <ClInclude Include="src\CryCommon\IInput.h" />
+    <ClInclude Include="src\CryCommon\ILipSync.h" />
+    <ClInclude Include="src\CryCommon\ILMSerializationManager.h" />
+    <ClInclude Include="src\CryCommon\ILog.h" />
+    <ClInclude Include="src\CryCommon\IMarkers.h" />
+    <ClInclude Include="src\CryCommon\IMiniLog.h" />
+    <ClInclude Include="src\CryCommon\IMovieSystem.h" />
+    <ClInclude Include="src\CryCommon\INetwork.h" />
+    <ClInclude Include="src\CryCommon\IPAddress.h" />
+    <ClInclude Include="src\CryCommon\IPhysics.h" />
+    <ClInclude Include="src\CryCommon\IProcess.h" />
+    <ClInclude Include="src\CryCommon\IRenderer.h" />
+    <ClInclude Include="src\CryCommon\IScriptSystem.h" />
+    <ClInclude Include="src\CryCommon\IShader.h" />
+    <ClInclude Include="src\CryCommon\ISound.h" />
+    <ClInclude Include="src\CryCommon\IStatObj.h" />
+    <ClInclude Include="src\CryCommon\IStreamEngine.h" />
+    <ClInclude Include="src\CryCommon\IStreamPersist.h" />
+    <ClInclude Include="src\CryCommon\ISystem.h" />
+    <ClInclude Include="src\CryCommon\ITimer.h" />
+    <ClInclude Include="src\CryCommon\IValidator.h" />
+    <ClInclude Include="src\CryCommon\IXGame.h" />
+    <ClInclude Include="src\CryCommon\IXml.h" />
+    <ClInclude Include="src\CryCommon\IXMLDOM.h" />
+    <ClInclude Include="src\CryCommon\LeafBuffer.h" />
+    <ClInclude Include="src\CryCommon\Linux32Specific.h" />
+    <ClInclude Include="src\CryCommon\Linux64Specific.h" />
+    <ClInclude Include="src\CryCommon\LinuxSpecific.h" />
+    <ClInclude Include="src\CryCommon\list2.h" />
+    <ClInclude Include="src\CryCommon\LMCompStructures.h" />
+    <ClInclude Include="src\CryCommon\MakMatInfoFromMAT_ENTITY.h" />
+    <ClInclude Include="src\CryCommon\matrixnm.h" />
+    <ClInclude Include="src\CryCommon\MeshIdx.h" />
+    <ClInclude Include="src\CryCommon\Names.h" />
+    <ClInclude Include="src\CryCommon\physinterface.h" />
+    <ClInclude Include="src\CryCommon\platform.h" />
+    <ClInclude Include="src\CryCommon\primitives.h" />
+    <ClInclude Include="src\CryCommon\ProjectDefines.h" />
+    <ClInclude Include="src\CryCommon\Range.h" />
+    <ClInclude Include="src\CryCommon\RendElement.h" />
+    <ClInclude Include="src\CryCommon\ScriptObjectVector.h" />
+    <ClInclude Include="src\CryCommon\SerializeBuffer.h" />
+    <ClInclude Include="src\CryCommon\smartptr.h" />
+    <ClInclude Include="src\CryCommon\StlDbgAlloc.h" />
+    <ClInclude Include="src\CryCommon\StlUtils.h" />
+    <ClInclude Include="src\CryCommon\Stream.h" />
+    <ClInclude Include="src\CryCommon\StreamData.h" />
+    <ClInclude Include="src\CryCommon\StringUtils.h" />
+    <ClInclude Include="src\CryCommon\TAlloc.h" />
+    <ClInclude Include="src\CryCommon\Tarray.h" />
+    <ClInclude Include="src\CryCommon\TArrays.h" />
+    <ClInclude Include="src\CryCommon\TimeValue.h" />
+    <ClInclude Include="src\CryCommon\TString.h" />
+    <ClInclude Include="src\CryCommon\VertexBufferSource.h" />
+    <ClInclude Include="src\CryCommon\VertexFormats.h" />
+    <ClInclude Include="src\CryCommon\Win32specific.h" />
+    <ClInclude Include="src\CryCommon\Win64specific.h" />
+    <ClInclude Include="src\CryCommon\XboxSpecific.h" />
+    <ClInclude Include="src\CryCommon\XmlParser.h" />
+    <ClInclude Include="src\CryCommon\XmlParserFont.h" />
+    <ClInclude Include="src\CryCommon\XmlStream.h" />
+    <ClInclude Include="src\CryCommon\_ScriptableEx.h" />
+    <ClInclude Include="src\CryCommon\_TinyWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\CgfDump\CgfDump.vcproj" />
+    <None Include="src\CgfDump\CgfDump.vcproj.vspscc" />
+    <None Include="src\CryCommon\CryCommon.vcproj" />
+    <None Include="src\CryCommon\CryCommon.vcproj.7.00.old" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="src\CryCommon\fSinCos64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
